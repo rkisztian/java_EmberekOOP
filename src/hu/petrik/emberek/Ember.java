@@ -16,6 +16,8 @@ public class Ember {
     }
 
 
+
+
     public int getSzulEv(){
         return Integer.parseInt(this.szulDatum.substring(0,4));
     }
@@ -35,7 +37,7 @@ public class Ember {
 
     @Override
     public String toString() {
-        return String.format("%30s %10s (%3d év) %20s %d",this.nev, this.szulDatum,
-                this.getEletkor(),this.szulHely,this.getSzulNap());
+        return String.format("%30s %10s (%3s év) %20s ",this.nev, this.szulDatum,
+                this.getEletkor(),this.szulHely);
     }
 }
